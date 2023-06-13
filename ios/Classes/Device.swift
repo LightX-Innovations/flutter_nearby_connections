@@ -31,7 +31,7 @@ class Device: NSObject {
         if (self.state == MCSessionState.notConnected) {
             self.createSession()
             if let session = session {
-                browser.invitePeer(self.peerID, to: session, withContext: nil, timeout: 10)
+                browser.invitePeer(self.peerID, to: session, withContext: nil, timeout: 3)
             }
         }
     }
